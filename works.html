@@ -150,18 +150,10 @@
             transition: width 0.3s ease;
         }
 
-        .nav-links a:hover::after {
-            width: 100%;
-        }
+        .nav-links a:hover::after { width: 100%; }
+        .nav-links a:hover { color: var(--gold); }
 
-        .nav-links a:hover {
-            color: var(--gold);
-        }
-
-        .nav-links a.active {
-            color: var(--soft-white);
-        }
-
+        .nav-links a.active { color: var(--soft-white); }
         .nav-links a.active::after {
             width: 100%;
             background: var(--soft-white);
@@ -191,30 +183,16 @@
             border-radius: 2px;
         }
 
-        .hamburger.open div:nth-child(1) {
-            transform: rotate(45deg) translate(5px, 5px);
-            background: var(--soft-white);
-        }
-
-        .hamburger.open div:nth-child(2) {
-            opacity: 0;
-            transform: translateX(-20px);
-        }
-
-        .hamburger.open div:nth-child(3) {
-            transform: rotate(-45deg) translate(5px, -5px);
-            background: var(--soft-white);
-        }
+        .hamburger.open div:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); background: var(--soft-white); }
+        .hamburger.open div:nth-child(2) { opacity: 0; transform: translateX(-20px); }
+        .hamburger.open div:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); background: var(--soft-white); }
 
         /* ==================== MOBILE MENU ==================== */
         .mobile-menu-overlay {
             display: flex;
             flex-direction: column;
             position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
+            top: 0; left: 0; right: 0; bottom: 0;
             background: rgba(0, 0, 0, 0.98);
             backdrop-filter: blur(30px);
             -webkit-backdrop-filter: blur(30px);
@@ -228,10 +206,7 @@
             transition: opacity 0.4s ease, visibility 0.4s ease;
         }
 
-        .mobile-menu-overlay.active {
-            opacity: 1;
-            visibility: visible;
-        }
+        .mobile-menu-overlay.active { opacity: 1; visibility: visible; }
 
         .mobile-menu-overlay a {
             font-size: 2rem;
@@ -246,33 +221,11 @@
             transition: opacity 0.4s ease, transform 0.4s ease, color 0.3s ease;
         }
 
-        .mobile-menu-overlay.active a:nth-child(1) {
-            opacity: 1;
-            transform: translateY(0);
-            transition-delay: 0.05s;
-        }
-
-        .mobile-menu-overlay.active a:nth-child(2) {
-            opacity: 1;
-            transform: translateY(0);
-            transition-delay: 0.12s;
-        }
-
-        .mobile-menu-overlay.active a:nth-child(3) {
-            opacity: 1;
-            transform: translateY(0);
-            transition-delay: 0.19s;
-        }
-
-        .mobile-menu-overlay.active a:nth-child(4) {
-            opacity: 1;
-            transform: translateY(0);
-            transition-delay: 0.26s;
-        }
-
-        .mobile-menu-overlay a:hover {
-            color: var(--gold);
-        }
+        .mobile-menu-overlay.active a:nth-child(1) { opacity: 1; transform: translateY(0); transition-delay: 0.05s; }
+        .mobile-menu-overlay.active a:nth-child(2) { opacity: 1; transform: translateY(0); transition-delay: 0.12s; }
+        .mobile-menu-overlay.active a:nth-child(3) { opacity: 1; transform: translateY(0); transition-delay: 0.19s; }
+        .mobile-menu-overlay.active a:nth-child(4) { opacity: 1; transform: translateY(0); transition-delay: 0.26s; }
+        .mobile-menu-overlay a:hover { color: var(--gold); }
 
         /* ==================== HERO ==================== */
         .hero {
@@ -289,13 +242,11 @@
         .hero::before {
             content: '';
             position: absolute;
-            width: 500px;
-            height: 500px;
+            width: 500px; height: 500px;
             background: radial-gradient(circle, rgba(201, 169, 97, 0.05) 0%, transparent 70%);
             border-radius: 50%;
             filter: blur(100px);
-            top: 50%;
-            left: 50%;
+            top: 50%; left: 50%;
             transform: translate(-50%, -50%);
         }
 
@@ -306,8 +257,7 @@
         }
 
         .hero-ornament {
-            width: 60px;
-            height: 1px;
+            width: 60px; height: 1px;
             background: var(--gold);
             margin: 0 auto 2rem;
             position: relative;
@@ -315,25 +265,15 @@
             animation: fadeIn 1.5s ease 0.3s forwards;
         }
 
-        .hero-ornament::before,
-        .hero-ornament::after {
+        .hero-ornament::before, .hero-ornament::after {
             content: '';
             position: absolute;
-            width: 8px;
-            height: 8px;
+            width: 8px; height: 8px;
             border: 1px solid var(--gold);
             transform: rotate(45deg);
         }
-
-        .hero-ornament::before {
-            left: -15px;
-            top: -3.5px;
-        }
-
-        .hero-ornament::after {
-            right: -15px;
-            top: -3.5px;
-        }
+        .hero-ornament::before { left: -15px; top: -3.5px; }
+        .hero-ornament::after { right: -15px; top: -3.5px; }
 
         .hero .page-label {
             font-size: 0.75rem;
@@ -379,7 +319,6 @@
             z-index: 1;
         }
 
-        /* 2 columns × 2 rows */
         .video-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -397,10 +336,7 @@
             transform: translateY(30px);
         }
 
-        .video-card.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
+        .video-card.visible { opacity: 1; transform: translateY(0); }
 
         .video-card:hover {
             border-color: rgba(201, 169, 97, 0.4);
@@ -415,51 +351,80 @@
             padding-top: 56.25%;
             background: var(--charcoal);
             overflow: hidden;
+            cursor: pointer;
         }
 
-        /* Vimeo iframe fills the wrapper */
-        .video-thumbnail iframe {
+        /* Thumbnail image */
+        .video-thumbnail .thumb-img {
             position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: none;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.5s ease, filter 0.4s ease;
         }
 
-        /* Shown while iframe loads */
-        .video-thumb-loader {
+        .video-card:hover .thumb-img {
+            transform: scale(1.04);
+            filter: brightness(0.75);
+        }
+
+        /* Play button overlay */
+        .play-btn {
             position: absolute;
-            inset: 0;
+            top: 50%; left: 50%;
+            transform: translate(-50%, -50%);
+            width: 64px; height: 64px;
+            background: rgba(0, 0, 0, 0.55);
+            border: 2px solid rgba(201, 169, 97, 0.7);
+            border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            background: linear-gradient(135deg, #111 0%, rgba(201, 169, 97, 0.07) 100%);
-            z-index: 1;
+            z-index: 2;
+            transition: background 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
             pointer-events: none;
-            transition: opacity 0.4s ease;
         }
 
-        .video-thumb-loader::after {
+        .play-btn::after {
             content: '';
-            width: 36px;
-            height: 36px;
-            border: 2px solid rgba(201, 169, 97, 0.2);
-            border-top-color: var(--gold);
-            border-radius: 50%;
-            animation: spin 0.9s linear infinite;
+            display: block;
+            width: 0; height: 0;
+            border-style: solid;
+            border-width: 11px 0 11px 20px;
+            border-color: transparent transparent transparent var(--gold);
+            margin-left: 4px;
+            transition: border-color 0.3s ease;
         }
 
-        @keyframes spin {
-            to {
-                transform: rotate(360deg);
-            }
+        .video-card:hover .play-btn {
+            background: rgba(201, 169, 97, 0.2);
+            border-color: var(--gold);
+            transform: translate(-50%, -50%) scale(1.12);
+        }
+
+        /* Vimeo iframe — hidden until thumbnail is clicked */
+        .video-thumbnail iframe {
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            border: none;
+            display: none;
+            z-index: 3;
+        }
+
+        /* When active, show iframe and hide thumbnail layers */
+        .video-thumbnail.playing .thumb-img,
+        .video-thumbnail.playing .play-btn {
+            display: none;
+        }
+
+        .video-thumbnail.playing iframe {
+            display: block;
         }
 
         /* Card info below the video */
-        .video-info {
-            padding: 1.8rem 2rem 2rem;
-        }
+        .video-info { padding: 1.8rem 2rem 2rem; }
 
         .video-tag {
             display: inline-block;
@@ -506,32 +471,21 @@
         }
 
         .footer-ornament {
-            width: 60px;
-            height: 1px;
+            width: 60px; height: 1px;
             background: var(--gold);
             margin: 0 auto 3rem;
             position: relative;
         }
 
-        .footer-ornament::before,
-        .footer-ornament::after {
+        .footer-ornament::before, .footer-ornament::after {
             content: '';
             position: absolute;
-            width: 6px;
-            height: 6px;
+            width: 6px; height: 6px;
             border: 1px solid var(--gold);
             transform: rotate(45deg);
         }
-
-        .footer-ornament::before {
-            left: -12px;
-            top: -2.5px;
-        }
-
-        .footer-ornament::after {
-            right: -12px;
-            top: -2.5px;
-        }
+        .footer-ornament::before { left: -12px; top: -2.5px; }
+        .footer-ornament::after { right: -12px; top: -2.5px; }
 
         .social-links {
             display: flex;
@@ -541,8 +495,7 @@
         }
 
         .social-links a {
-            width: 45px;
-            height: 45px;
+            width: 45px; height: 45px;
             border: 1px solid rgba(201, 169, 97, 0.3);
             display: flex;
             align-items: center;
@@ -569,95 +522,39 @@
 
         /* ==================== RESPONSIVE ==================== */
         @media (max-width: 1024px) {
-            .video-gallery {
-                padding: 3rem 6% 8rem;
-            }
-
-            nav {
-                padding: 1.5rem 6%;
-            }
-
-            nav.scrolled {
-                padding: 1rem 6%;
-            }
-
-            .nav-links {
-                gap: 2.5rem;
-            }
+            .video-gallery { padding: 3rem 6% 8rem; }
+            nav { padding: 1.5rem 6%; }
+            nav.scrolled { padding: 1rem 6%; }
+            .nav-links { gap: 2.5rem; }
         }
 
         @media (max-width: 768px) {
-            .nav-links {
-                display: none;
-            }
-
-            .hamburger {
-                display: flex;
-            }
-
-            .hero {
-                padding: 10rem 5% 4rem;
-            }
-
-            .video-gallery {
-                padding: 3rem 5% 6rem;
-            }
-
-            .video-grid {
-                gap: 1.5rem;
-            }
-
-            nav {
-                padding: 1.5rem 5%;
-                height: 80px;
-            }
-
-            footer {
-                padding: 4rem 5%;
-            }
+            .nav-links { display: none; }
+            .hamburger { display: flex; }
+            .hero { padding: 10rem 5% 4rem; }
+            .video-gallery { padding: 3rem 5% 6rem; }
+            .video-grid { gap: 1.5rem; }
+            nav { padding: 1.5rem 5%; height: 80px; }
+            footer { padding: 4rem 5%; }
         }
 
         @media (max-width: 560px) {
-
-            /* Stack to 1 column on small phones */
-            .video-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .hero h1 {
-                letter-spacing: 4px;
-            }
-
-            .video-info {
-                padding: 1.2rem 1.4rem 1.5rem;
-            }
-
-            .mobile-menu-overlay a {
-                font-size: 1.5rem;
-            }
+            .video-grid { grid-template-columns: 1fr; }
+            .hero h1 { letter-spacing: 4px; }
+            .video-info { padding: 1.2rem 1.4rem 1.5rem; }
+            .mobile-menu-overlay a { font-size: 1.5rem; }
+            .play-btn { width: 52px; height: 52px; }
         }
 
         /* ==================== ANIMATIONS ==================== */
         @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
         }
 
         @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-
-            to {
-                opacity: 1;
-            }
+            from { opacity: 0; }
+            to { opacity: 1; }
         }
     </style>
 </head>
@@ -698,8 +595,7 @@
             <div class="hero-ornament"></div>
             <p class="page-label">Selected Work</p>
             <h1>My Work</h1>
-            <p>A curated collection of edits — each one built with intention, precision, and a distinct visual voice.
-            </p>
+            <p>A curated collection of edits — each one built with intention, precision, and a distinct visual voice.</p>
         </div>
     </section>
 
@@ -709,66 +605,57 @@
 
             <!-- VIDEO 1 -->
             <div class="video-card">
-                <div class="video-thumbnail">
-                    <div class="video-thumb-loader"></div>
-                    <iframe src="https://player.vimeo.com/video/1173981188?title=0&byline=0&portrait=0&badge=0&dnt=1"
-                        allow="autoplay; fullscreen; picture-in-picture" allowfullscreen loading="lazy"
-                        title="Pagent Final">
-                    </iframe>
+                <div class="video-thumbnail" data-vimeo="https://player.vimeo.com/video/1173981188?autoplay=1&title=0&byline=0&portrait=0&badge=0&dnt=1">
+                    <img class="thumb-img" src="thumb-1.webp" alt="Amrita Pageant thumbnail" loading="lazy">
+                    <div class="play-btn" aria-hidden="true"></div>
+                    <iframe allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Pagent Final"></iframe>
                 </div>
                 <div class="video-info">
                     <span class="video-tag">Fast Paced Edit</span>
                     <h3 class="video-title">Amrita Pageant</h3>
-                    <p class="video-description">A high-energy edit crafted for Amrita University's official page —
-                        capturing the pulse and prestige of their annual pageant.</p>
+                    <p class="video-description">A high-energy edit crafted for Amrita University's official page — capturing the pulse and prestige of their annual pageant.</p>
                 </div>
             </div>
 
             <!-- VIDEO 2 -->
             <div class="video-card">
-                <div class="video-thumbnail">
-                    <div class="video-thumb-loader"></div>
-                    <iframe src="https://player.vimeo.com/video/1199185694?title=0&byline=0&portrait=0&badge=0&dnt=1"
-                        allow="autoplay; fullscreen; picture-in-picture" allowfullscreen loading="lazy" title="Video 2">
-                    </iframe>
+                <div class="video-thumbnail" data-vimeo="https://player.vimeo.com/video/1199185694?autoplay=1&title=0&byline=0&portrait=0&badge=0&dnt=1">
+                    <img class="thumb-img" src="thumb-2.webp" alt="Kerala Diaries thumbnail" loading="lazy">
+                    <div class="play-btn" aria-hidden="true"></div>
+                    <iframe allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Kerala Diaries"></iframe>
                 </div>
                 <div class="video-info">
                     <span class="video-tag">Travel Edit</span>
                     <h3 class="video-title">Kerala Diaries</h3>
-                    <p class="video-description">A personal travel edit shot across Kerala — a visual journey through
-                        landscapes, light, and moments worth keeping.</p>
+                    <p class="video-description">A personal travel edit shot across Kerala — a visual journey through landscapes, light, and moments worth keeping.</p>
                 </div>
             </div>
 
             <!-- VIDEO 3 -->
             <div class="video-card">
-                <div class="video-thumbnail">
-                    <div class="video-thumb-loader"></div>
-                    <iframe src="https://player.vimeo.com/video/1199185676?title=0&byline=0&portrait=0&badge=0&dnt=1"
-                        allow="autoplay; fullscreen; picture-in-picture" allowfullscreen loading="lazy" title="Video 3">
-                    </iframe>
+                <div class="video-thumbnail" data-vimeo="https://player.vimeo.com/video/1199185676?autoplay=1&title=0&byline=0&portrait=0&badge=0&dnt=1">
+                    <img class="thumb-img" src="thumb-3.webp" alt="Forensic Club Promo thumbnail" loading="lazy">
+                    <div class="play-btn" aria-hidden="true"></div>
+                    <iframe allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Forensic Club Promo"></iframe>
                 </div>
                 <div class="video-info">
                     <span class="video-tag">Short Film</span>
                     <h3 class="video-title">Forensic Club Promo</h3>
-                    <p class="video-description">A story-driven promotional film for a forensic club — directed and shot
-                        by me, blending narrative and cinematography to bring the club's identity to life.</p>
+                    <p class="video-description">A story-driven promotional film for a forensic club — directed and shot by me, blending narrative and cinematography to bring the club's identity to life.</p>
                 </div>
             </div>
 
             <!-- VIDEO 4 -->
             <div class="video-card">
-                <div class="video-thumbnail">
-                    <div class="video-thumb-loader"></div>
-                    <iframe src="https://player.vimeo.com/video/1173982704?title=0&byline=0&portrait=0&badge=0&dnt=1"
-                        allow="autoplay; fullscreen; picture-in-picture" allowfullscreen loading="lazy" title="Video 4">
-                    </iframe>
+                <div class="video-thumbnail" data-vimeo="https://player.vimeo.com/video/1173982704?autoplay=1&title=0&byline=0&portrait=0&badge=0&dnt=1">
+                    <img class="thumb-img" src="thumb-4.webp" alt="Redstring thumbnail" loading="lazy">
+                    <div class="play-btn" aria-hidden="true"></div>
+                    <iframe allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Redstring"></iframe>
                 </div>
                 <div class="video-info">
                     <span class="video-tag">Commercial</span>
                     <h3 class="video-title">Redstring</h3>
-                    <p class="video-description">A commercial video produced for Redstring — clean, intentional visuals
-                        built to represent the brand I worked with.</p>
+                    <p class="video-description">A commercial video produced for Redstring — clean, intentional visuals built to represent the brand I worked with.</p>
                 </div>
             </div>
 
@@ -845,7 +732,7 @@
         const cards = document.querySelectorAll('.video-card');
 
         const cardObserver = new IntersectionObserver((entries) => {
-            entries.forEach((entry, i) => {
+            entries.forEach((entry) => {
                 if (entry.isIntersecting) {
                     const idx = Array.from(cards).indexOf(entry.target);
                     setTimeout(() => {
@@ -858,14 +745,16 @@
 
         cards.forEach(card => cardObserver.observe(card));
 
-        // --- HIDE LOADER ONCE IFRAME LOADS ---
-        document.querySelectorAll('.video-thumbnail iframe').forEach(iframe => {
-            iframe.addEventListener('load', () => {
-                const loader = iframe.previousElementSibling;
-                if (loader && loader.classList.contains('video-thumb-loader')) {
-                    loader.style.opacity = '0';
-                    setTimeout(() => loader.remove(), 400);
-                }
+        // --- THUMBNAIL CLICK → LOAD VIMEO ---
+        document.querySelectorAll('.video-thumbnail').forEach(wrapper => {
+            wrapper.addEventListener('click', () => {
+                if (wrapper.classList.contains('playing')) return;
+
+                const vimeoSrc = wrapper.getAttribute('data-vimeo');
+                const iframe = wrapper.querySelector('iframe');
+
+                iframe.src = vimeoSrc;
+                wrapper.classList.add('playing');
             });
         });
     </script>
